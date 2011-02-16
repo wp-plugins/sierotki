@@ -1,4 +1,4 @@
-=== Interactive Polish Map  ===
+=== Sierotki ===
 Contributors: iworks
 Donate link: http://iworks.pl/donate/sierotki.php
 Tags: sierotki, spójniki, twarda spacja
