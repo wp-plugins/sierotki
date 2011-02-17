@@ -8,5 +8,5 @@ Version: trunk
 Author URI: http://iworks.pl/
 */
 
-add_filter('the_content',function($c){return preg_replace('/ +([aiouwz]|że|za|na|od|nad|pod|to) +/'," $1&nbsp;",$c);});
+add_filter('the_content',function($c){return preg_replace('/([ >]+)([aiouwz]|że|za|na|od|nad|pod|to) +/',"$1$2&nbsp;",$c);});
 ?>
