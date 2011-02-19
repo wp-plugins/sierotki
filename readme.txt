@@ -16,12 +16,18 @@ Wtyczka poprawia sierotki, tak żeby nie mogły zostać na końcu lini, zastępu
 
 1. Upload plugin to the `/wp-content/plugins/` directory.
 1. Activate the plugin through the 'Plugins' menu in WordPress.
+1. Configure options 'Apperance' => 'Orphan' (default all options are turn on).
 
 == Changelog == 
 
+= 1.3 - 2011-02-19 =
+
+* NEW: Added option page to turn on/off filtering in content, excerpt or comments.
+* NEW: Added "(" as char before a orphan.
+
 = 1.2 - 2011-02-18 =
 
-* NEW: add filter comment_text.
+* NEW: Added filter comment_text.
 * BUGFIX: capital letters was missing by plugin.
 
 = 1.1 - 2011-02-17 =
