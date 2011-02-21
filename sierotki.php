@@ -21,7 +21,7 @@ function iworks_orphan_options()
 function iworks_orphan($content)
 {
     if ( $content ) {
-        return preg_replace('/([ >\(]+)([aiouwz]|że|za|na|od|nad|pod|to) +/i', "$1$2&nbsp;", $content);
+        return preg_replace('/([ >\(]+)([aiouwz]|że|za|na|od|nad|pod|to|ale|we|do|ul\.|po|nr) +/i', "$1$2&nbsp;", $content);
     }
     return $content;
 }
