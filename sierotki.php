@@ -39,8 +39,9 @@ function iworks_orphan($content)
                 'że',
                 'ks.'
             );
-        $own_orphans = get_option('iworks_orphan_own_orphans', '');
+        $own_orphans = trim(get_option('iworks_orphan_own_orphans', ''), ' \t,');
         if ($own_orphans) {
+            $own_orphans = preg_replace('/\,\+/', ',', $own_orphans);
             $therms = array_merge($therms, preg_split('/,[ \t]*/', strtolower($own_orphans)));
         }
         $re = '/([ >\(]+)([aiouwz]|'.preg_replace('/\./', '\.', implode('|', $therms)).') +/i';
