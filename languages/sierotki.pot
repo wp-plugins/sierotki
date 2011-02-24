@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Sierotki trunk\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/sierotki\n"
-"POT-Creation-Date: 2011-02-19 18:23+0100\n"
+"POT-Creation-Date: 2011-02-24 10:30+0100\n"
 "PO-Revision-Date: 2011-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Marcin Pietrzak <marcin@iworks.pl>\n"
 "Language-Team: Marcin Pietrzak <marcin@iworks.pl>\n"
@@ -18,22 +18,42 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: sierotki.php:15
-msgid "Use for comments."
+msgid "Use for comments:"
+msgstr ""
+
+#: sierotki.php:15
+msgid "Enabled the substitution of orphans in the comments."
 msgstr ""
 
 #: sierotki.php:16
-msgid "Use for excerpt."
+msgid "Use for excerpt:"
+msgstr ""
+
+#: sierotki.php:16
+msgid "Enabled the substitution of orphans in the excerpt."
 msgstr ""
 
 #: sierotki.php:17
-msgid "Use for content."
+msgid "Use for content:"
 msgstr ""
 
-#: sierotki.php:33 sierotki.php:63
+#: sierotki.php:17
+msgid "Enabled the substitution of orphans in the content."
+msgstr ""
+
+#: sierotki.php:18
+msgid "User definied orphans:"
+msgstr ""
+
+#: sierotki.php:18
+msgid "Use a comma to separate orphans."
+msgstr ""
+
+#: sierotki.php:53 sierotki.php:100
 msgid "Orphan"
 msgstr ""
 
-#: sierotki.php:55
+#: sierotki.php:92
 msgid "Save Changes"
 msgstr ""
 

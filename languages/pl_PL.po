@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Sierotki\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/sierotki\n"
-"POT-Creation-Date: 2011-02-19 18:23+0100\n"
+"POT-Creation-Date: 2011-02-24 10:30+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Marcin Pietrzak <marcin@iworks.pl>\n"
 "Language-Team: Iworks\n"
@@ -15,23 +15,43 @@ msgstr ""
 "X-Poedit-SourceCharset: utf-8\n"
 
 #: sierotki.php:15
-msgid "Use for comments."
-msgstr "Używaj w komentarzach."
+msgid "Use for comments:"
+msgstr "Używaj w komentarzach:"
+
+#: sierotki.php:15
+msgid "Enabled the substitution of orphans in the comments."
+msgstr "Włącz obsługę sierotek w komentarzach."
 
 #: sierotki.php:16
-msgid "Use for excerpt."
-msgstr "Używaj w zajawce."
+msgid "Use for excerpt:"
+msgstr "Używaj w zajawce:"
+
+#: sierotki.php:16
+msgid "Enabled the substitution of orphans in the excerpt."
+msgstr "Włącz obsługę sierotek w zajawce."
 
 #: sierotki.php:17
-msgid "Use for content."
-msgstr "Używaj w treści."
+msgid "Use for content:"
+msgstr "Używaj w treści:"
 
-#: sierotki.php:33
-#: sierotki.php:63
+#: sierotki.php:17
+msgid "Enabled the substitution of orphans in the content."
+msgstr "Włącz obsługę sierotek w treści."
+
+#: sierotki.php:18
+msgid "User definied orphans:"
+msgstr "Własna definicja sierotek:"
+
+#: sierotki.php:18
+msgid "Use a comma to separate orphans."
+msgstr "Użyj przecinka do oddzielenia sierot."
+
+#: sierotki.php:53
+#: sierotki.php:100
 msgid "Orphan"
 msgstr "Sierotki"
 
-#: sierotki.php:55
+#: sierotki.php:92
 msgid "Save Changes"
 msgstr ""
 
@@ -54,4 +74,7 @@ msgstr ""
 #. Author URI of the plugin/theme
 msgid "http://iworks.pl/"
 msgstr ""
+
+#~ msgid "Add your own orphans."
+#~ msgstr "Dodaj własne sierotki:"
 
