@@ -24,6 +24,10 @@ Wtyczka poprawia sierotki, tak żeby nie mogły zostać na końcu lini, zastępu
 
 == Changelog ==
 
+= 1.4.2 - 2012-03-02 =
+
+* NEW: Add the_title filter.
+
 = 1.4.1 - 2011-02-24 =
 
 * NEW: Trim chars.

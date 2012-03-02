@@ -12,10 +12,11 @@ function iworks_orphan_options()
 {
     return array
         (
-            'comment_text' => array ( 'description' => __('Use for comments:', 'iworks_orphan'), 'type' => 'checkbox', 'label' => __('Enabled the substitution of orphans in the comments.', 'iworks_orphan'), 'sanitize_callback' => 'absint'),
-            'the_excerpt'  => array ( 'description' => __('Use for excerpt:',  'iworks_orphan'), 'type' => 'checkbox', 'label' => __('Enabled the substitution of orphans in the excerpt.', 'iworks_orphan'), 'sanitize_callback' => 'absint'),
-            'the_content'  => array ( 'description' => __('Use for content:',  'iworks_orphan'), 'type' => 'checkbox', 'label' => __('Enabled the substitution of orphans in the content.', 'iworks_orphan'), 'sanitize_callback' => 'absint'),
-            'own_orphans'  => array ( 'description' => __('User definied orphans:', 'iworks_orphan'), 'label' => __('Use a comma to separate orphans.', 'iworks_orphan'), 'sanitize_callback' => 'esc_html')
+            'comment_text' => array ( 'description' => __( 'Use for comments:',      'iworks_orphan' ), 'type'  => 'checkbox', 'label' => __('Enabled the substitution of orphans in the comments.', 'iworks_orphan'), 'sanitize_callback' => 'absint'),
+            'the_title'    => array ( 'description' => __( 'Use for post title:',    'iworks_orphan' ), 'type'  => 'checkbox', 'label' => __('Enabled the substitution of orphans in the post_title.', 'iworks_orphan'), 'sanitize_callback' => 'absint'),
+            'the_excerpt'  => array ( 'description' => __( 'Use for excerpt:',       'iworks_orphan' ), 'type'  => 'checkbox', 'label' => __('Enabled the substitution of orphans in the excerpt.', 'iworks_orphan'), 'sanitize_callback' => 'absint'),
+            'the_content'  => array ( 'description' => __( 'Use for content:',       'iworks_orphan' ), 'type'  => 'checkbox', 'label' => __('Enabled the substitution of orphans in the content.', 'iworks_orphan'), 'sanitize_callback' => 'absint'),
+            'own_orphans'  => array ( 'description' => __( 'User definied orphans:', 'iworks_orphan' ), 'label' => __('Use a comma to separate orphans.', 'iworks_orphan'), 'sanitize_callback' => 'esc_html')
         );
 }
 
@@ -144,4 +145,3 @@ add_action('init',       'iworks_orphan_init');
 add_action('admin_init', 'iworks_orphan_admin_init');
 add_action('admin_menu', 'iworks_orphan_admin_menu');
 
-?>
