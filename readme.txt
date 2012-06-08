@@ -3,7 +3,7 @@ Contributors: iworks
 Donate link: http://iworks.pl/donate/sierotki.php
 Tags: sierotki, spójniki, twarda spacja
 Requires at least: 2.1
-Tested up to: 3.0.5
+Tested up to: 3.3.2
 Stable tag: 1.4.2
 
 Wtyczka poprawia sierotki, tak żeby nie mogły zostać na końcu lini.
@@ -23,6 +23,8 @@ Wtyczka poprawia sierotki, tak żeby nie mogły zostać na końcu lini, zastępu
 1. Orphan Options
 
 == Changelog ==
+
+* BUGFIX: fixed permistion to configuration page
 
 = 1.4.2 - 2012-03-02 =
 

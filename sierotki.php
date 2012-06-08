@@ -102,7 +102,7 @@ function iworks_orphan_option_page()
 function iworks_orphan_admin_menu()
 {
     if (function_exists('add_theme_page')) {
-        add_theme_page( __('Orphan', 'iworks_orphan'),  __('Orphan', 'iworks_orphan'), 'edit_posts', basename(__FILE__), 'iworks_orphan_option_page' );
+        add_theme_page( __('Orphan', 'iworks_orphan'),  __('Orphan', 'iworks_orphan'), 'manage_options', basename(__FILE__), 'iworks_orphan_option_page' );
     }
 }
 
