@@ -2,9 +2,9 @@
 Contributors: iworks
 Donate link: http://iworks.pl/donate/sierotki.php
 Tags: sierotki, spójniki, twarda spacja
-Requires at least: 2.1
-Tested up to: 3.3.2
-Stable tag: 1.4.2
+Requires at least: 2.7
+Tested up to: 3.4.1
+Stable tag: 2.0
 
 Wtyczka poprawia sierotki, tak żeby nie mogły zostać na końcu lini.
 
@@ -18,13 +18,25 @@ Wtyczka poprawia sierotki, tak żeby nie mogły zostać na końcu lini, zastępu
 1. Activate the plugin through the 'Plugins' menu in WordPress.
 1. Configure options 'Apperance' => 'Orphan' (default all options are turn on).
 
+== Frequently Asked Questions ==
+
+= When this plugin replace spaces? =
+
+Plugins works when viewing the content and does not modify your content.
+
 == Screenshots ==
 
 1. Orphan Options
 
 == Changelog ==
 
+= 2.0 - 2012-08-12 =
+
 * BUGFIX: fixed permistion to configuration page
+* BUGFIX: fixed replacement for strings starting with a orphan
+* REFACTORING: rewrite code to the class
+* IMPROVMENT: add some shorts of academic degree
+* IMPROVMENT: massive increase orphans dictionary thx to [adpawl](http://podbabiogorze.info.pl)
 
 = 1.4.2 - 2012-03-02 =
 
