@@ -4,7 +4,7 @@ Plugin Name: Sierotki
 Plugin URI: http://iworks.pl/2011/02/16/sierotki/
 Description: Wtyczka zamienia leżące za sierotkami spacje w jedną twardą.
 Author: Marcin Pietrzak
-Version: trunk
+Version: 2.0
 Author URI: http://iworks.pl/
 */
 
