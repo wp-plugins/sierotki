@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Sierotki\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/sierotki\n"
-"POT-Creation-Date: 2011-02-24 10:30+0100\n"
+"POT-Creation-Date: 2012-08-12 14:25:58+00:00\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Marcin Pietrzak <marcin@iworks.pl>\n"
 "Language-Team: Iworks\n"
@@ -14,66 +14,74 @@ msgstr ""
 "X-Poedit-Country: POLAND\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: sierotki.php:15
+#: sierotki.php:23
 msgid "Use for comments:"
 msgstr "Używaj w komentarzach:"
 
-#: sierotki.php:15
+#: sierotki.php:23
 msgid "Enabled the substitution of orphans in the comments."
 msgstr "Włącz obsługę sierotek w komentarzach."
 
-#: sierotki.php:16
+#: sierotki.php:24
+msgid "Use for post title:"
+msgstr "Używaj w tytułach:"
+
+#: sierotki.php:24
+msgid "Enabled the substitution of orphans in the post_title."
+msgstr "Włącz obsługę sierotek dla tytułów."
+
+#: sierotki.php:25
 msgid "Use for excerpt:"
 msgstr "Używaj w zajawce:"
 
-#: sierotki.php:16
+#: sierotki.php:25
 msgid "Enabled the substitution of orphans in the excerpt."
 msgstr "Włącz obsługę sierotek w zajawce."
 
-#: sierotki.php:17
+#: sierotki.php:26
 msgid "Use for content:"
 msgstr "Używaj w treści:"
 
-#: sierotki.php:17
+#: sierotki.php:26
 msgid "Enabled the substitution of orphans in the content."
 msgstr "Włącz obsługę sierotek w treści."
 
-#: sierotki.php:18
+#: sierotki.php:27
 msgid "User definied orphans:"
 msgstr "Własna definicja sierotek:"
 
-#: sierotki.php:18
+#: sierotki.php:27
 msgid "Use a comma to separate orphans."
 msgstr "Użyj przecinka do oddzielenia sierot."
 
-#: sierotki.php:53
-#: sierotki.php:100
+#: sierotki.php:77
+#: sierotki.php:122
 msgid "Orphan"
 msgstr "Sierotki"
 
-#: sierotki.php:92
+#: sierotki.php:114
 msgid "Save Changes"
-msgstr ""
+msgstr "Zapisz zmiany"
 
 #. Plugin Name of the plugin/theme
 msgid "Sierotki"
-msgstr ""
+msgstr "Sierotki"
 
 #. Plugin URI of the plugin/theme
 msgid "http://iworks.pl/2011/02/16/sierotki/"
-msgstr ""
+msgstr "http://iworks.pl/2011/02/16/sierotki/"
 
 #. Description of the plugin/theme
 msgid "Wtyczka zamienia leżące za sierotkami spacje w jedną twardą."
-msgstr ""
+msgstr "Wtyczka zamienia leżące za sierotkami spacje w jedną twardą."
 
 #. Author of the plugin/theme
 msgid "Marcin Pietrzak"
-msgstr ""
+msgstr "Marcin Pietrzak"
 
 #. Author URI of the plugin/theme
 msgid "http://iworks.pl/"
-msgstr ""
+msgstr "http://iworks.pl/"
 
 #~ msgid "Add your own orphans."
 #~ msgstr "Dodaj własne sierotki:"
