@@ -72,6 +72,13 @@ class iWorks_Orphan
         $re = '/^([aiouwz]|'.preg_replace('/\./', '\.', implode('|', $therms)).') +/i';
         $content = preg_replace( $re, "$1$2&nbsp;", $content );
         $re = '/([ >\(]+)([aiouwz]|'.preg_replace('/\./', '\.', implode('|', $therms)).') +/i';
+        /**
+         * replace space in numbers
+         */
+        $content = preg_replace( '/(\d) (\d)/', "$1&nbsp;$2", $content );
+        /**
+         * return
+         */
         return preg_replace( $re, "$1$2&nbsp;", $content );
     }
 
@@ -134,6 +141,7 @@ class iWorks_Orphan
             $sanitize_callback = isset($option['sanitize_callback'])? $option['sanitize_callback']:null;
             register_setting('iworks_orphan', 'iworks_orphan_'.$filter, $sanitize_callback);
         }
+        add_filter( 'plugin_row_meta', array( &$this, 'links' ), 10, 2 );
     }
 
     public function init()
@@ -141,6 +149,9 @@ class iWorks_Orphan
 
         if ( 0 == get_option('iworks_orphan_initialized', 0 ) ) {
             foreach ( $this->options as $filter => $option ) {
+                if ( !isset( $option['type'] ) ) {
+                    $option['type'] = 'undefinied';
+                }
                 switch( $option['type'] ) {
                 case 'checkbox':
                     update_option('iworks_orphan_'.$filter, 1);
@@ -160,6 +171,18 @@ class iWorks_Orphan
         }
     }
 
+    public function links( $links, $file )
+    {
+        if ( $file == plugin_basename(__FILE__) ) {
+            if ( !is_multisite() ) {
+                $dir = explode('/', dirname(__FILE__));
+                $dir = $dir[ count( $dir ) - 1 ];
+                $links[] = '<a href="themes.php?page='.$dir.'.php">' . __('Settings') . '</a>';
+            }
+            $links[] = '<a href="http://iworks.pl/donate/sierotki.php">' . __('Donate') . '</a>';
+        }
+        return $links;
+    }
 }
 
 new iWorks_Orphan();

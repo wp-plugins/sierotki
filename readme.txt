@@ -1,10 +1,10 @@
 === Sierotki ===
 Contributors: iworks
 Donate link: http://iworks.pl/donate/sierotki.php
-Tags: sierotki, spójniki, twarda spacja
+Tags: sierotki, spójniki, twarda spacja, spójniki
 Requires at least: 2.7
-Tested up to: 3.4.1
-Stable tag: 2.0
+Tested up to: 3.5.2
+Stable tag: 2.0.1
 
 Wtyczka poprawia sierotki, tak żeby nie mogły zostać na końcu lini.
 
@@ -29,6 +29,10 @@ Plugins works when viewing the content and does not modify your content.
 1. Orphan Options
 
 == Changelog ==
+
+= 2.0.1 - 2013-07-10 =
+
+* IMPROVMENT: add numbers
 
 = 2.0 - 2012-08-12 =
 
