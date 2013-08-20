@@ -2,7 +2,7 @@
 Contributors: iworks
 Donate link: http://iworks.pl/donate/sierotki.php
 Tags: sierotki, spójniki, twarda spacja, spójniki
-Requires at least: 2.7
+Requires at least: 3.3
 Tested up to: 3.6
 Stable tag: 2.0.2
 
