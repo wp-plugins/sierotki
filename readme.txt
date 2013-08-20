@@ -12,6 +12,10 @@ Wtyczka poprawia sierotki, tak żeby nie mogły zostać na końcu lini.
 
 Wtyczka poprawia sierotki, tak żeby nie mogły zostać na końcu lini, zastępując spacje znajdujące się za sierotkami na jedną twardą spację.
 
+= EN =
+
+Plugin supports some of the grammatical rules of the Polish language.
+
 == Installation ==
 
 1. Upload plugin to the `/wp-content/plugins/` directory.
@@ -29,6 +33,12 @@ Plugins works when viewing the content and does not modify your content.
 1. Orphan Options
 
 == Changelog ==
+
+= 2.1 - 2013-08-20 =
+
+* BUGFIX: fixed replacement for single letter orphan after orphan thx to [Szymon Skulimowski](http://wpninja.pl/autorzy/szymon-skulimowski/)
+* IMPROVMENT: checked capability with WP 3.6
+* IMPROVMENT: added help and related section
 
 = 2.0.1 - 2013-07-10 =
 

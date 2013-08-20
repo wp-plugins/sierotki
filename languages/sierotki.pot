@@ -1,63 +1,99 @@
-# Copyright (C) 2010 Sierotki
+# Copyright (C) 2013 Sierotki
 # This file is distributed under the same license as the Sierotki package.
 msgid ""
 msgstr ""
 "Project-Id-Version: Sierotki trunk\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/sierotki\n"
-"POT-Creation-Date: 2012-08-12 14:25:58+00:00\n"
+"POT-Creation-Date: 2013-08-20 12:03:38+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2010-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2013-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Marcin Pietrzak <marcin@iworks.pl>\n"
 "Language-Team: Marcin Pietrzak <marcin@iworks.pl>\n"
 
-#: sierotki.php:23
+#: sierotki.php:34
 msgid "Use for comments:"
 msgstr ""
 
-#: sierotki.php:23
+#: sierotki.php:34
 msgid "Enabled the substitution of orphans in the comments."
 msgstr ""
 
-#: sierotki.php:24
+#: sierotki.php:35
 msgid "Use for post title:"
 msgstr ""
 
-#: sierotki.php:24
+#: sierotki.php:35
 msgid "Enabled the substitution of orphans in the post_title."
 msgstr ""
 
-#: sierotki.php:25
+#: sierotki.php:36
 msgid "Use for excerpt:"
 msgstr ""
 
-#: sierotki.php:25
+#: sierotki.php:36
 msgid "Enabled the substitution of orphans in the excerpt."
 msgstr ""
 
-#: sierotki.php:26
+#: sierotki.php:37
 msgid "Use for content:"
 msgstr ""
 
-#: sierotki.php:26
+#: sierotki.php:37
 msgid "Enabled the substitution of orphans in the content."
 msgstr ""
 
-#: sierotki.php:27
+#: sierotki.php:38
 msgid "User definied orphans:"
 msgstr ""
 
-#: sierotki.php:27
+#: sierotki.php:38
 msgid "Use a comma to separate orphans."
 msgstr ""
 
-#: sierotki.php:77 sierotki.php:122
+#: sierotki.php:100 sierotki.php:158
+msgid "Orphans"
+msgstr ""
+
+#: sierotki.php:136
+msgid "Save Changes"
+msgstr ""
+
+#: sierotki.php:144
 msgid "Orphan"
 msgstr ""
 
-#: sierotki.php:114
-msgid "Save Changes"
+#: sierotki.php:159
+msgid "Plugin fix some Polish gramary rules with orphans."
+msgstr ""
+
+#: sierotki.php:165
+msgid "For more information:"
+msgstr ""
+
+#: sierotki.php:166
+msgid ""
+"<a href=\"http://wordpress.org/extend/plugins/sierotki/\" target=\"_blank"
+"\">Plugin Homepage</a>"
+msgstr ""
+
+#: sierotki.php:167
+msgid ""
+"<a href=\"http://wordpress.org/support/plugin/sierotki/\" target=\"_blank"
+"\">Support Forums</a>"
+msgstr ""
+
+#: sierotki.php:168
+msgid "<a href=\"http://iworks.pl/en/\" target=\"_blank\">break the web</a>"
+msgstr ""
+
+#: sierotki.php:215
+msgid "Settings"
+msgstr ""
+
+#: sierotki.php:217
+msgid "Donate"
 msgstr ""
 
 #. Plugin Name of the plugin/theme

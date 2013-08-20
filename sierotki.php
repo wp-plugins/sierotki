@@ -11,6 +11,7 @@ Author URI: http://iworks.pl/
 class iWorks_Orphan
 {
     private $options;
+    private $admin_page;
 
     public function __construct()
     {
@@ -71,15 +72,24 @@ class iWorks_Orphan
         }
         $re = '/^([aiouwz]|'.preg_replace('/\./', '\.', implode('|', $therms)).') +/i';
         $content = preg_replace( $re, "$1$2&nbsp;", $content );
-        $re = '/([ >\(]+)([aiouwz]|'.preg_replace('/\./', '\.', implode('|', $therms)).') +/i';
         /**
          * replace space in numbers
          */
         $content = preg_replace( '/(\d) (\d)/', "$1&nbsp;$2", $content );
         /**
+         * single letters
+         */
+        $re = '/([ >\(]+)([aiouwz]|'.preg_replace('/\./', '\.', implode('|', $therms)).') +/i';
+        $content = preg_replace( $re, "$1$2&nbsp;", $content );
+        /**
+         * single letter after previous orphan
+         */
+        $re = '/(&nbsp;)([aiouwz]) +/i';
+        $content = preg_replace( $re, "$1$2&nbsp;", $content );
+        /**
          * return
          */
-        return preg_replace( $re, "$1$2&nbsp;", $content );
+        return $content;
     }
 
     public function option_page()
@@ -87,7 +97,7 @@ class iWorks_Orphan
 ?>
 <div class="wrap">
     <?php screen_icon(); ?>
-    <h2><?php _e('Orphan', 'iworks_orphan') ?></h2>
+    <h2><?php _e('Orphans', 'iworks_orphan') ?></h2>
     <form method="post" action="options.php">
         <?php settings_fields('iworks_orphan'); ?>
         <table class="form-table">
@@ -131,8 +141,33 @@ class iWorks_Orphan
     public function admin_menu()
     {
         if ( function_exists( 'add_theme_page' ) ) {
-            add_theme_page( __( 'Orphan', 'iworks_orphan'),  __('Orphan', 'iworks_orphan'), 'manage_options', basename(__FILE__), array( &$this, 'option_page' ) );
+            $this->admin_page = add_theme_page( __( 'Orphan', 'iworks_orphan'),  __('Orphan', 'iworks_orphan'), 'manage_options', basename(__FILE__), array( &$this, 'option_page' ) );
+            add_action( 'load-'.$this->admin_page, array( &$this, 'add_help_tab' ) );
         }
+    }
+
+    public function add_help_tab()
+    {
+        $screen = get_current_screen();
+        if ( $screen->id != $this->admin_page ) {
+            return;
+        }
+        // Add my_help_tab if current screen is My Admin Page
+        $screen->add_help_tab( array(
+            'id'    => 'overview',
+            'title' => __( 'Orphans', 'iworks_orphan' ),
+            'content'   => '<p>' . __( 'Plugin fix some Polish gramary rules with orphans.', 'iworks_orphan' ) . '</p>',
+        ) );
+            /**
+             * make sidebar help
+             */
+            $screen->set_help_sidebar(
+                '<p><strong>' . __( 'For more information:' ) . '</strong></p>' .
+                '<p>' . __( '<a href="http://wordpress.org/extend/plugins/sierotki/" target="_blank">Plugin Homepage</a>', 'iworks_orphan' ) . '</p>' .
+                '<p>' . __( '<a href="http://wordpress.org/support/plugin/sierotki/" target="_blank">Support Forums</a>', 'iworks_orphan' ) . '</p>' .
+                '<p>' . __( '<a href="http://iworks.pl/en/" target="_blank">break the web</a>', 'iworks_orphan' ) . '</p>'
+            );
+
     }
 
     public function admin_init()
