@@ -3,8 +3,8 @@ Contributors: iworks
 Donate link: http://iworks.pl/donate/sierotki.php
 Tags: sierotki, spójniki, twarda spacja, spójniki
 Requires at least: 3.3
-Tested up to: 3.6
-Stable tag: 2.0.2
+Tested up to: 3.7.1
+Stable tag: 2.1
 
 Wtyczka poprawia sierotki, tak żeby nie mogły zostać na końcu lini.
 
@@ -33,6 +33,11 @@ Plugins works when viewing the content and does not modify your content.
 1. Orphan Options
 
 == Changelog ==
+
+= 2.1 - 2013-11-09 =
+
+* IMPROVMENT: checked capability with WP 3.6
+* REFACTORING: implement PSR-0 rules to orphan class
 
 = 2.0.2 - 2013-08-20 =
 
