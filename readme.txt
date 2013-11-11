@@ -16,6 +16,10 @@ Wtyczka poprawia sierotki, tak żeby nie mogły zostać na końcu lini, zastępu
 
 Plugin supports some of the grammatical rules of the Polish language.
 
+= Asset image =
+
+[Manuscript by Muffet, on Flickr](http://www.flickr.com/photos/calliope/306564541/)
+
 == Installation ==
 
 1. Upload plugin to the `/wp-content/plugins/` directory.
