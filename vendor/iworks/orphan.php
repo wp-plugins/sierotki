@@ -96,8 +96,8 @@ class iworks_orphan
     {
 ?>
 <div class="wrap">
-    <?php screen_icon(); ?>
     <h2><?php _e('Orphans', 'iworks_orphan') ?></h2>
+    <div class="postbox-container" style="width:75%">
     <form method="post" action="options.php">
         <?php settings_fields('iworks_orphan'); ?>
         <table class="form-table">
@@ -135,6 +135,33 @@ class iworks_orphan
         </table>
         <p class="submit"><input type="submit" class="button-primary" value="<?php _e('Save Changes') ?>" /></p>
     </form>
+        </div>
+        <div class="postbox-container" style="width:23%;margin-left:2%">
+            <div class="metabox-holder">
+                <div id="links" class="postbox">
+                    <h3 class="hndle"><?php _e( 'Loved this Plugin?', 'iworks_orphan' ); ?></h3>
+                    <div class="inside">
+                        <p><?php _e( 'Below are some links to help spread this plugin to other users', 'iworks_orphan' ); ?></p>
+                        <ul>
+                            <li><a href="http://wordpress.org/extend/plugins/sierotki/"><?php _e( 'Give it a 5 star on Wordpress.org', 'iworks_orphan' ); ?></a></li>
+                            <li><a href="http://wordpress.org/extend/plugins/sierotki/"><?php _e( 'Link to it so others can easily find it', 'iworks_orphan' ); ?></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="help" class="postbox">
+                    <h3 class="hndle"><?php _e( 'Need Assistance?', 'iworks_orphan' ); ?></h3>
+                    <div class="inside">
+                        <p><?php _e( 'Problems? The links bellow can be very helpful to you', 'iworks_orphan' ); ?></p>
+                        <ul>
+                            <li><a href="<?php _e( 'http://wordpress.org/support/plugin/sierotki', 'iworks_orphan' ); ?>"><?php _e( 'Wordpress Help Forum', 'iworks_orphan' ); ?></a></li>
+                            <li><a href="mailto:<?php echo antispambot('marcin@iworks.pl'); ?>"><?php echo antispambot( 'marcin@iworks.pl' ); ?></a></li>
+                        </ul>
+                        <hr />
+                        <p class="description"><?php _e('Created by: ', 'iworks_orphan' ); ?> <a href="http://iworks.pl/"><span>iWorks.pl</span></a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div><?php
     }
 
