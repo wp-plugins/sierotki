@@ -3,7 +3,7 @@ Contributors: iworks
 Donate link: http://iworks.pl/donate/sierotki.php
 Tags: sierotki, spójniki, twarda spacja, spójniki
 Requires at least: 3.3
-Tested up to: 3.8.1
+Tested up to: 3.9.1
 Stable tag: 2.2
 
 Wtyczka poprawia sierotki, tak żeby nie mogły zostać na końcu lini.
@@ -32,11 +32,34 @@ Plugin supports some of the grammatical rules of the Polish language.
 
 Plugins works when viewing the content and does not modify your content.
 
+= How to use this plugin on custom field? =
+
+Use this code:
+
+`
+$orphan = new iworks_orphan();
+echo $orphan->replace( get_post_meta($post_id, 'meta_key', true ) );
+`
+
+= How to use this plugin on any string? =
+
+Use this code:
+
+`
+$orphan = new iworks_orphan();
+echo $orphan->replace( 'any_string' );
+`
+
+
 == Screenshots ==
 
 1. Orphan Options
 
 == Changelog ==
+
+= 2.3 - 2014-06-18 =
+
+* IMPROVMENT: add all forms of word number
 
 = 2.2 - 2014-01-24 =
 
