@@ -4,7 +4,7 @@ Donate link: http://iworks.pl/donate/sierotki.php
 Tags: sierotki, spójniki, twarda spacja, spójniki
 Requires at least: 3.3
 Tested up to: 3.9.1
-Stable tag: 2.2
+Stable tag: 2.3
 
 Wtyczka poprawia sierotki, tak żeby nie mogły zostać na końcu lini.
 
@@ -57,7 +57,7 @@ echo $orphan->replace( 'any_string' );
 
 == Changelog ==
 
-= 2.3 - 2014-06-18 =
+= 2.3 - 2014-07-10 =
 
 * IMPROVMENT: add all forms of word number
 
