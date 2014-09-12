@@ -35,7 +35,7 @@ class iworks_orphan
             'the_title'    => array ( 'description' => __( 'Use for post title:',    'iworks_orphan' ), 'type'  => 'checkbox', 'label' => __('Enabled the substitution of orphans in the post_title.', 'iworks_orphan'), 'sanitize_callback' => 'absint'),
             'the_excerpt'  => array ( 'description' => __( 'Use for excerpt:',       'iworks_orphan' ), 'type'  => 'checkbox', 'label' => __('Enabled the substitution of orphans in the excerpt.', 'iworks_orphan'), 'sanitize_callback' => 'absint'),
             'the_content'  => array ( 'description' => __( 'Use for content:',       'iworks_orphan' ), 'type'  => 'checkbox', 'label' => __('Enabled the substitution of orphans in the content.', 'iworks_orphan'), 'sanitize_callback' => 'absint'),
-            'own_orphans'  => array ( 'description' => __( 'User definied orphans:', 'iworks_orphan' ), 'label' => __('Use a comma to separate orphans.', 'iworks_orphan'), 'sanitize_callback' => 'esc_html')
+            'own_orphans'  => array ( 'description' => __( 'User definied orphans:', 'iworks_orphan' ), 'label' => __('Use a comma to separate orphans.', 'iworks_orphan'), 'sanitize_callback' => 'esc_html'),
         );
     }
 
@@ -105,8 +105,22 @@ class iworks_orphan
             <tbody>
 <?php
         foreach ( $this->options as $filter => $option ) {
+            /**
+             * check option type
+             */
+            if (
+                0
+                || !is_array($option)
+                || empty($option)
+                || !array_key_exists('type', $option )
+            ) {
+                continue;
+            }
             $field = 'iworks_orphan_'.$filter;
-            printf ('<tr valign="top"><th scope="row">%s</th><td>', $option['description']);
+            printf (
+                '<tr valign="top"><th scope="row">%s</th><td>',
+                array_key_exists('description', $option)? $option['description']:'&nbsp;'
+            );
             switch( $option['type'] ) {
             case 'checkbox':
                 printf (
