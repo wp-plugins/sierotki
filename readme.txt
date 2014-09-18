@@ -57,6 +57,10 @@ echo $orphan->replace( 'any_string' );
 
 == Changelog ==
 
+= 2.3.3 - future =
+
+* IMPROVEMENT: add hard space between number (year) and polish year shortcut "r."
+
 = 2.3.2 - 2014-09-12 =
 
 * BUGFIX: fixed error in options array

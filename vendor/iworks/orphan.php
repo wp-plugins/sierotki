@@ -88,6 +88,10 @@ class iworks_orphan
         $re = '/(&nbsp;)([aiouwz]) +/i';
         $content = preg_replace( $re, "$1$2&nbsp;", $content );
         /**
+         * polish year after number
+         */
+        $content = preg_replace('/(\d+) (r\.)/', "$1&nbsp;$2", $content);
+        /**
          * return
          */
         return $content;
