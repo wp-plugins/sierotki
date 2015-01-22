@@ -3,7 +3,7 @@ Contributors: iworks
 Donate link: http://iworks.pl/donate/sierotki.php
 Tags: sierotki, spójniki, twarda spacja, spójniki
 Requires at least: 3.3
-Tested up to: 4.0
+Tested up to: 4.1
 Stable tag: 2.3.2
 
 Wtyczka poprawia sierotki, tak żeby nie mogły zostać na końcu lini.
