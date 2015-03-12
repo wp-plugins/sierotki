@@ -3,14 +3,14 @@ Contributors: iworks
 Donate link: http://iworks.pl/donate/sierotki.php
 Tags: sierotki, spójniki, twarda spacja, spójniki
 Requires at least: 3.3
-Tested up to: 4.1
+Tested up to: 4.1.1
 Stable tag: 2.3.2
 
-Wtyczka poprawia sierotki, tak żeby nie mogły zostać na końcu lini.
+Wtyczka poprawia sierotki, tak żeby nie mogły zostać na końcu linii.
 
 == Description ==
 
-Wtyczka poprawia sierotki, tak żeby nie mogły zostać na końcu lini, zastępując spacje znajdujące się za sierotkami na jedną twardą spację.
+Wtyczka poprawia sierotki, tak żeby nie mogły zostać na końcu linii, zastępując spacje znajdujące się za sierotkami na jedną twardą spację.
 
 = EN =
 
@@ -30,7 +30,7 @@ Plugin supports some of the grammatical rules of the Polish language.
 
 = When this plugin replace spaces? =
 
-Plugins works when viewing the content and does not modify your content.
+Plugin works when viewing the content and does not modify your content.
 
 = How to use this plugin on custom field? =
 
@@ -57,9 +57,10 @@ echo $orphan->replace( 'any_string' );
 
 == Changelog ==
 
-= 2.3.3 - future =
+= 2.4 - 2015-02-12 =
 
 * IMPROVEMENT: add hard space between number (year) and polish year shortcut "r."
+* IMPROVEMENT: add WooCommerce product title and short description to available options. thx to [Dominik Kawula](https://www.facebook.com/dominik.kawula)
 
 = 2.3.2 - 2014-09-12 =
 
