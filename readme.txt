@@ -53,6 +53,7 @@ echo $orphan->replace( 'any_string' );
 
 == Screenshots ==
 
+1. Opcje Sierotek
 1. Orphan Options
 
 == Changelog ==
